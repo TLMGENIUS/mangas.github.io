@@ -1,0 +1,143 @@
+.arrow-down-icon,
+.contrair-icon,
+.cross-icon,
+.facebook-icon,
+.google-icon,
+.login-icon,
+.logout-icon,
+.mangas-coin-icon,
+.mangasproject-icon,
+.mark-all-hover-icon,
+.mark-all-icon,
+.not-favorited-icon,
+.twitter-icon,
+.user-nav-icon,
+.user-picture-icon,
+.vip-mask-icon {
+    background-image: url(/web/20211222155728im_/https://mangalivre.net/assets/images/users-sprites.png?v3) !important;
+    background-repeat: no-repeat !important;
+    display: inline-block
+}
+
+.favorite-action-icon {
+    background-position: -23px 0;
+    width: 29px;
+    height: 26px
+}
+
+.arrow-down-icon {
+    background-position: 0 -27px;
+    width: 12px;
+    height: 9px
+}
+
+.contrair-icon {
+    background-position: 0 -38px;
+    width: 13px;
+    height: 4px
+}
+
+.cross-icon {
+    background-position: -55px 0;
+    width: 12px;
+    height: 11px
+}
+
+.facebook-icon {
+    background-position: 0 -45px;
+    width: 14px;
+    height: 24px
+}
+
+.google-icon {
+    background-position: -17px -28px;
+    width: 18px;
+    height: 24px
+}
+
+.login-icon {
+    background-position: -17px -55px;
+    width: 15px;
+    height: 14px
+}
+
+.logout-icon {
+    background-position: -39px -30px;
+    width: 12px;
+    height: 14px
+}
+
+.mangas-coin-icon {
+    background-position: -57px -21px;
+    width: 34px;
+    height: 35px
+}
+
+.mangasproject-icon {
+    background-position: -38px -59px;
+    width: 25px;
+    height: 18px
+}
+
+.mark-all-hover-icon {
+    background-position: -66px -59px;
+    width: 19px;
+    height: 18px
+}
+
+.mark-all-icon {
+    background-position: -88px -59px;
+    width: 19px;
+    height: 18px
+}
+
+.not-favorited-icon {
+    background-position: -102px 0;
+    width: 29px;
+    height: 26px
+}
+
+.twitter-icon {
+    background-position: -133px -1px;
+    width: 24px;
+    height: 20px
+}
+
+.user-nav-icon {
+    background-position: -111px -54px;
+    width: 27px;
+    height: 32px
+}
+
+.user-picture-icon {
+    background-position: -160px -2px;
+    width: 10px;
+    height: 14px
+}
+
+.vip-mask-icon {
+    background-position: -142px -54px;
+    width: 18px;
+    height: 18px
+}
+
+/*
+     FILE ARCHIVED ON 15:57:28 Dec 22, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:10:12 Dec 19, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.662
+  exclusion.robots: 0.033
+  exclusion.robots.policy: 0.021
+  esindex: 0.013
+  cdx.remote: 13.608
+  LoadShardBlock: 127.094 (3)
+  PetaboxLoader3.resolve: 125.846 (4)
+  PetaboxLoader3.datanode: 116.75 (5)
+  load_resource: 122.697 (2)
+*/

@@ -1,0 +1,310 @@
+/*topnav*/
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Menu horizontal em telas maiores */
+}
+
+.menu li {
+    margin-left: 20px;
+    /* Espaçamento entre os itens do menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.menu-toggle {
+    display: none;
+    /* Oculto em telas maiores */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    /* Transição suave */
+}
+
+/* Estilos para telas menores (ex: mobile - breakpoint em 768px) */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        /* Oculta o menu principal */
+        flex-direction: column;
+        /* Menu vertical quando visível */
+        position: fixed;
+        /* Menu fixo na tela */
+        top: 60px;
+        /* Ajuste para evitar sobreposição com o cabeçalho */
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        /* Altura total menos o cabeçalho*/
+        background-color: #fff;
+        /* Cor de fundo */
+        z-index: 1000;
+        /* Garante que o menu fique acima de outros elementos */
+        overflow-y: auto;
+        /* Adiciona barra de rolagem se necessário */
+        padding: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        padding: 5px 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        /* Espaçamento vertical entre os itens */
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Mostra o botão em telas menores */
+    }
+
+    /* Estilos para o menu aberto (com classe "active") */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Animação do botão "hambúrguer" ao abrir o menu */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    /* Necessário para posicionar o menu responsivo */
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    /* Transição suave na cor */
+}
+
+.navbar-brand a:hover {
+    color: #007bff;
+    /* Cor ao passar o mouse */
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    /* Transição suave na escala */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    /* Aumenta o logo ao passar o mouse */
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+    /* Transição suave na cor */
+}
+
+.navbar-menu a:hover {
+    color: #007bff;
+    /* Cor ao passar o mouse */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        /* Oculta o menu em telas menores */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Ajuste conforme a altura da sua navbar */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Sombra para destacar o menu */
+        z-index: 1000;
+    }
+
+    .navbar-menu.active {
+        /* Mostra o menu quando a classe "active" é adicionada */
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        /* Linha separadora entre os itens */
+        width: 100%;
+    }
+
+    .navbar-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Mostra o botão de menu em telas menores */
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        border: none;
+        background: none;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+}
+
+.search-box {
+    display: flex;
+    margin-right: 15px;
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.login-button {
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/*topnav*/
+
+/*navbar*/
+/* Estilos da navbar (já existente, adaptados) */
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* ... (resto dos estilos da navbar, como no exemplo anterior) ... */
+
+/* Estilos para o conteúdo principal */
+
+/*navbar*/
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px 10px;
+}
+
+.background {
+    width: 1150px;
+    height: 300px;
+    background-image: linear-gradient(to right, #e0eafc, #cfdef3);
+    /* Gradiente linear */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}

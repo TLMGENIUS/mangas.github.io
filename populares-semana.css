@@ -1,0 +1,90 @@
+.main-bg-image {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #fffb00;
+    /* Vermelho */
+}
+
+.pattern-x {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #ff00dd;
+    /* Vermelho */
+}
+
+.most-read-title {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #3cff00;
+    /* Vermelho */
+}
+
+.most-read-menu {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #0026ff;
+    /* Vermelho */
+}
+
+.carousel {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #1d1c1c;
+    /* Vermelho */
+}
+
+#left-side {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #009247;
+    /* Vermelho */
+}
+
+#right-side {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #0a0092;
+    /* Vermelho */
+}
+
+#push-subscribe-container {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #bc018a;
+    /* Vermelho */
+}
+
+#add-to-homescreen-wrapper {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #560000;
+    /* Vermelho */
+}
+
+#login-modal {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #818abe;
+    /* Vermelho */
+}
+
+#recover-password-modal {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #84567b;
+    /* Vermelho */
+}
+
+#recover-password-modal-fb {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #3c00ff;
+    /* Vermelho */
+}
+
+#register-modal {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #a97070;
+    /* Vermelho */
+}
